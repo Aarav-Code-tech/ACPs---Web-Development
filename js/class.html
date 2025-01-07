@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS</title>
+</head>
+<body>
+    <script>
+        class parent{
+            constructor(b){
+                
+                this.b = b
+            }
+            display(){
+                document.write(this.b)
+            }
+        }
+        class child extends parent{
+            constructor(b,c){
+                
+                super(b)
+                this.c = c
+            }
+            static uisadwjda(){
+                document.write("ejefioshjbf")
+            }
+        }
+        var obj = new child(98,89)
+        obj.display()
+        document.write("<br>",obj.c,"<br>")
+        child.uisadwjda()
+    </script>
+</body>
+</html>
