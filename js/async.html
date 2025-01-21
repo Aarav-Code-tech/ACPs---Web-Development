@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <script>
+        async function fun(a,b){
+            var res = await a*b;
+            display(res)
+        }
+        function display(c){
+            document.write(c)
+        }
+        fun(67,3)
+    </script>
+    
+</body>
+</html>
