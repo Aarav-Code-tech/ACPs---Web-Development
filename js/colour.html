@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour changing</title>
+</head>
+<body id="body">
+
+    <button onclick = "color()">Go</button>
+    <script>
+        function color(){
+            document.getElementById("body").style.backgroundColor="blue"
+            setTimeout(color1,50)
+        }
+        function color1(){
+            document.getElementById("body").style.backgroundColor="yellow"
+            setTimeout(color2,50)
+        }
+        function color2(){
+            document.getElementById("body").style.backgroundColor="green"
+            setTimeout(color3,50)
+        }
+        function color3(){
+            document.getElementById("body").style.backgroundColor="red"
+            setTimeout(color4,50)
+        }
+        function color4(){
+            document.getElementById("body").style.backgroundColor="violet"
+            setTimeout(color,50)
+        }
+    </script>
+    
+</body>
+</html>
