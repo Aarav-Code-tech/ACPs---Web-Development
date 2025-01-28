@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        h1{
+            text-align: center;
+
+        }
+        h1:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        ul li:nth-child(2){
+            background-color: beige;
+        }
+        ul li::before{
+            content: "🚀";
+        }
+        ul li::first-letter{
+
+        font-size:200%;
+        color:orange;
+    }
+        
+    </style>
+</head>
+<body>
+    <h1>Mars</h1>
+    <ul>
+        <li>
+            Mars is a red planet which is visible in the night sky.
+        </li>
+        <li>
+            Life existed on mars millions of years ago.
+        </li>
+        <li>
+            The north and south pole of mars contain frozen water(ice).
+        </li>
+    </ul>
+    <center><img src = "https://www.universetoday.com/wp-content/uploads/2014/09/mars4.jpg" width="65%" height = "40%"></center>
+    
+</body>
+</html>
