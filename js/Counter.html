@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+
+        }
+        h1{
+            font-size: 6ch;
+        }
+        p{
+            font-size: 3.9ch;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Counter Application</h1></center>
+    
+    <p><span id="msec">0</span></p>
+    <button id = "start">Start</button>
+    <button id = "stop">Stop</button>
+    <button id = "reset">Reset</button>
+    <script>
+        window.onload=function(){
+            var msecs = 0;
+            var appendms = document.getElementById("msec")
+            var start = document.getElementById("start")
+            var stop = document.getElementById("stop")
+            var reset = document.getElementById("reset")
+            var interval;
+            start.onclick=function(){
+                clearInterval(interval)
+                interval = setInterval(fun,10)
+
+
+            }
+            stop.onclick=function(){
+                clearInterval(interval)
+            }
+            reset.onclick=function(){
+                clearInterval(interval)
+                msecs="0"
+                appendms.innerHTML=msecs
+            }
+            function fun(){
+                msecs++
+                if (msecs<=9){
+                    appendms.innerHTML=msecs
+                }
+                if (msecs>9){
+                    appendms.innerHTML=msecs
+                }
+
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
